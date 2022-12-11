@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "6b4fc0b3-3138-43cf-953a-3c29fdc4d287",
+		"name": "product api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"ayush savaliya\",\r\n    \"email\":\"ayush@gmail.com\",\r\n    \"password\":\"ayush123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/userRegister",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"userRegister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "login user",
+					"host": [
+						"login user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_image\":\"https://rukminim1.flixcart.com/image/416/416/krf91u80/mobile/6/l/i/f3-gt-mzb09c5in-poco-original-imag57hetqwnqaac.jpeg?q=70\",\r\n    \"product_name\":\"POCO F3 GT 5G (Gunmetal Silver, 128 GB)  (8 GB RAM)\",\r\n    \"product_description\":\"8 GB RAM | 128 GB ROM16.94 cm (6.67 inch) Full HD+ Display64MP + 8MP + 2MP\",\r\n    \"product_price\":28999\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/createproduct/629835eb7c62d5d74cd6f189",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createproduct",
+						"629835eb7c62d5d74cd6f189"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all product",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get product user by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update product",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/deleteproduct/62983927d9ea2b9153f60dd6",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deleteproduct",
+						"62983927d9ea2b9153f60dd6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
